@@ -25,4 +25,4 @@ def merge_intervals(intervals: list[list[int, int]]) -> list[list[int, int]]:
         i += 1
 
     return intervals
-    return [[0,0]]
+    return [[0, 0]]

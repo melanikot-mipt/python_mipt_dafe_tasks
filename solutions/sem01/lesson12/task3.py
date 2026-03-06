@@ -19,4 +19,3 @@ class FileOut:
         self._file.close()
         return False
         ...
-

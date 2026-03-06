@@ -4,6 +4,7 @@ import numpy as np
 class ShapeMismatchError(Exception):
     pass
 
+
 def convert_from_sphere(
     distances: np.ndarray,
     azimuth: np.ndarray,

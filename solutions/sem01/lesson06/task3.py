@@ -18,5 +18,4 @@ def is_there_any_good_subarray(
         else:
             d[r] = i
 
-    
     return False
