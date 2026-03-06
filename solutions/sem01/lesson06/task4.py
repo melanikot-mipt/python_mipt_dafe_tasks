@@ -1,5 +1,4 @@
 def count_unique_words(text: str) -> int:
-<<<<<<< HEAD
     d = {}
     lst = text.split(" ")
 
@@ -14,7 +13,5 @@ def count_unique_words(text: str) -> int:
         d.pop("")
 
     return len(d)
-=======
     # ваш код
     return 0
->>>>>>> upstream/main

@@ -2,7 +2,6 @@ from typing import Any, Generator, Iterable
 
 
 def circle(iterable: Iterable) -> Generator[Any, None, None]:
-<<<<<<< HEAD
     list_of_elements_already_returned = []
 
     for element in iterable:
@@ -18,7 +17,5 @@ def circle(iterable: Iterable) -> Generator[Any, None, None]:
     while True:
         call_number += 1
         yield list_of_elements_already_returned[(call_number - 1) % iterable_length]
-=======
     # ваш код
     ...
->>>>>>> upstream/main

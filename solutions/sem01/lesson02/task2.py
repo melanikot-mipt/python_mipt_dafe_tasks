@@ -1,6 +1,5 @@
 def get_doubled_factorial(num: int) -> int:
     factorial = 1
-<<<<<<< HEAD
 
     if num == 1 or num == 0:
         return factorial
@@ -15,7 +14,5 @@ def get_doubled_factorial(num: int) -> int:
                 factorial *= i
 
         return factorial
-=======
     # ваш код
     return factorial
->>>>>>> upstream/main

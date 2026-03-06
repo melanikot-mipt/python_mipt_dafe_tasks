@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import math
 from numbers import Real
 
@@ -142,7 +141,6 @@ class Vector2D:
         if self == Vector2D(0, 0) or other == Vector2D(0, 0):
             raise ValueError("Calculation of the angle between the zero vector is impossible")
         return math.acos((self @ other) / (self.__abs__() * other.__abs__()))
-=======
 class Vector2D:
     def conj(self) -> "Vector2D":
         # ваш код
@@ -153,4 +151,3 @@ class Vector2D:
         return 0
 
     # ваш код
->>>>>>> upstream/main

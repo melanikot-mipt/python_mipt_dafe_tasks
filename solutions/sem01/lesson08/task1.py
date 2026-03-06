@@ -1,6 +1,5 @@
 from typing import Callable
 
-<<<<<<< HEAD
 
 def make_averager(accumulation_period: int) -> Callable[[float], float]:
     income = []
@@ -18,8 +17,6 @@ def make_averager(accumulation_period: int) -> Callable[[float], float]:
         return sum / len(income)
 
     return get_avg
-=======
 def make_averager(accumulation_period: int) -> Callable[[float], float]:
     # ваш код
     pass
->>>>>>> upstream/main

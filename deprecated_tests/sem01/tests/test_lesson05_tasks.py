@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import pytest
-=======
 import pytest 
->>>>>>> upstream/main
 
 from solutions.sem01.lesson05.task1 import is_palindrome
 from solutions.sem01.lesson05.task2 import are_anagrams
@@ -11,7 +8,6 @@ from solutions.sem01.lesson05.task4 import unzip
 from solutions.sem01.lesson05.task5 import reg_validator
 from solutions.sem01.lesson05.task6 import simplify_path
 
-<<<<<<< HEAD
 
 @pytest.mark.parametrize(
     "s, expected",
@@ -32,7 +28,6 @@ from solutions.sem01.lesson05.task6 import simplify_path
         pytest.param("abcdefedcbx", False, id="long_false"),
     ],
 )
-=======
 @pytest.mark.parametrize("s, expected", [
     pytest.param("", True, id="empty_string"),
     pytest.param("a", True, id="single_char"),
@@ -49,12 +44,10 @@ from solutions.sem01.lesson05.task6 import simplify_path
     pytest.param("abcdefedcba", True, id="long_true"),
     pytest.param("abcdefedcbx", False, id="long_false"),
 ])
->>>>>>> upstream/main
 def test_is_palindrome(s, expected):
     assert is_palindrome(s) == expected
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "w1, w2, expected",
     [
@@ -72,7 +65,6 @@ def test_is_palindrome(s, expected):
         pytest.param("aabbcc", "aabbcd", False, id="extra_different_char"),
     ],
 )
-=======
 @pytest.mark.parametrize("w1, w2, expected", [
     pytest.param("listen", "silent", True, id="classic_anagram"),
     pytest.param("evil", "vile", True, id="another_anagram"),
@@ -87,12 +79,10 @@ def test_is_palindrome(s, expected):
     pytest.param("aabbcc", "abcabc", True, id="repeated_letters"),
     pytest.param("aabbcc", "aabbcd", False, id="extra_different_char"),
 ])
->>>>>>> upstream/main
 def test_are_anagrams_linear(w1, w2, expected):
     assert are_anagrams(w1, w2) == expected
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "s, expected",
     [
@@ -179,7 +169,6 @@ def test_decompress(compressed, expected):
         pytest.param("d-w-s", "123-abc-XYZ_123", False, id="d_w_s_underscore_in_s"),
     ],
 )
-=======
 @pytest.mark.parametrize("s, expected", [
     pytest.param("!!!", True, id="only_exclamations"),
     pytest.param("...?", True, id="dots_and_question"),
@@ -255,12 +244,10 @@ def test_decompress(compressed, expected):
     pytest.param("d-w-s", "123-abc-XY1Z23", True, id="d_w_s_valid"),
     pytest.param("d-w-s", "123-abc-XYZ_123", False, id="d_w_s_underscore_in_s"),
 ])
->>>>>>> upstream/main
 def test_match_pattern(regexp, s, expected):
     assert reg_validator(regexp, s) == expected
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "path, expected",
     [
@@ -289,7 +276,6 @@ def test_match_pattern(regexp, s, expected):
 )
 def test_simplify_path(path, expected):
     assert simplify_path(path) == expected
-=======
 @pytest.mark.parametrize("path, expected", [
     pytest.param("/home/", "/home", id="trailing_slash"),
     pytest.param("/../", "", id="go_above_root"),
@@ -315,4 +301,3 @@ def test_simplify_path(path, expected):
 ])
 def test_simplify_path(path, expected):
     assert simplify_path(path) == expected
->>>>>>> upstream/main

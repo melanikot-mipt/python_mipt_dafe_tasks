@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 from functools import wraps
-=======
->>>>>>> upstream/main
 from typing import (
     Callable,
     ParamSpec,
@@ -27,7 +24,6 @@ def lru_cache(capacity: int) -> Callable[[Callable[P, R]], Callable[P, R]]:
             для получения целого числа.
         ValueError, если после округления capacity - число, меньшее 1.
     """
-<<<<<<< HEAD
     try:
         new_capacity = round(capacity)
     except Exception:
@@ -146,7 +142,5 @@ try:
         return wrapper
     return decorator
 """
-=======
     # ваш код
     pass
->>>>>>> upstream/main

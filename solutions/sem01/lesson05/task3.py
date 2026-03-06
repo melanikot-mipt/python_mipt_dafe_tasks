@@ -1,5 +1,4 @@
 def is_punctuation(text: str) -> bool:
-<<<<<<< HEAD
     if text == "":
         return False
     for i in text:
@@ -7,7 +6,5 @@ def is_punctuation(text: str) -> bool:
             return False
 
     return True
-=======
     # ваш код
     return False
->>>>>>> upstream/main

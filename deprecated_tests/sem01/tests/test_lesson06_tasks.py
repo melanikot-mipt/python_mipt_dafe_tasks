@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import pytest
-=======
 import pytest 
->>>>>>> upstream/main
 
 from solutions.sem01.lesson06.task1 import int_to_roman
 from solutions.sem01.lesson06.task2 import get_len_of_longest_substring
@@ -10,7 +7,6 @@ from solutions.sem01.lesson06.task3 import is_there_any_good_subarray
 from solutions.sem01.lesson06.task4 import count_unique_words
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "num, expected",
     [
@@ -102,7 +98,6 @@ def test_get_len_of_longest_substring(s, expected):
         pytest.param([0, 1, 0, 0], 2, True, id="last_two_zeros_sum_0_div_by_any"),
     ],
 )
-=======
 @pytest.mark.parametrize("num, expected", [
     pytest.param(1, "I", id="one"),
     pytest.param(2, "II", id="two"),
@@ -179,14 +174,12 @@ def test_get_len_of_longest_substring(s, expected):
     pytest.param([0, 1, 0], 2, False, id="zeros_with_one_sum_1"),
     pytest.param([0, 1, 0, 0], 2, True, id="last_two_zeros_sum_0_div_by_any"),
 ])
->>>>>>> upstream/main
 def test_is_there_any_good_subarray(nums, k, expected):
     assert is_there_any_good_subarray(nums, k) == expected
 
 
 import pytest
 
-<<<<<<< HEAD
 
 @pytest.mark.parametrize(
     "text, expected",
@@ -209,7 +202,6 @@ import pytest
 )
 def test_count_unique_words(text, expected):
     assert count_unique_words(text) == expected
-=======
 @pytest.mark.parametrize("text, expected", [
     pytest.param("", 0, id="empty_string"),
     pytest.param("   ", 0, id="only_spaces"),
@@ -228,4 +220,3 @@ def test_count_unique_words(text, expected):
 ])
 def test_count_unique_words(text, expected):
     assert count_unique_words(text) == expected
->>>>>>> upstream/main

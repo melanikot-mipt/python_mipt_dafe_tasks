@@ -1,7 +1,6 @@
 def is_palindrome(num: int) -> bool:
     num_reversed = 0
     num_origin = num
-<<<<<<< HEAD
 
     if num < 0:
         num_reversed = -num
@@ -20,7 +19,5 @@ def is_palindrome(num: int) -> bool:
                 num_reversed += (num % (10**i)) // (10 ** (i - 1)) * 10 ** (len - i)
 
     return num_reversed == num_origin
-=======
     # ваш код
     return num_origin == num_reversed
->>>>>>> upstream/main

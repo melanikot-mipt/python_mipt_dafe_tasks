@@ -1,5 +1,4 @@
 def get_cube_root(n: float, eps: float) -> float:
-<<<<<<< HEAD
     if n == 0 or n == 1 or n == -1:
         return n
 
@@ -21,7 +20,5 @@ def get_cube_root(n: float, eps: float) -> float:
         mid = (m + M) / 2
 
     return mid
-=======
     # ваш код
     return n
->>>>>>> upstream/main

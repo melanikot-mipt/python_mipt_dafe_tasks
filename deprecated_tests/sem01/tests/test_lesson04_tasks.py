@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import pytest
-=======
 import pytest 
->>>>>>> upstream/main
 import random
 
 from solutions.sem01.lesson04.task1 import is_arithmetic_progression
@@ -12,7 +9,6 @@ from solutions.sem01.lesson04.task4 import move_zeros_to_end
 from solutions.sem01.lesson04.task5 import find_row_with_most_ones
 from solutions.sem01.lesson04.task6 import count_cycles
 
-<<<<<<< HEAD
 
 @pytest.mark.parametrize(
     "lst, expected",
@@ -32,7 +28,6 @@ from solutions.sem01.lesson04.task6 import count_cycles
         pytest.param([10**5 + i * 10**2 for i in range(999)] + [1], False, id="long_list_false"),
     ],
 )
-=======
 @pytest.mark.parametrize("lst, expected", [
     pytest.param([], True, id="empty_list"),
     pytest.param([5], True, id="single_element"),
@@ -48,14 +43,12 @@ from solutions.sem01.lesson04.task6 import count_cycles
     pytest.param([10**5 + i*10**2 for i in range(1000)], True, id="long_list_true"),
     pytest.param([10**5 + i*10**2 for i in range(999)] + [1], False, id="long_list_false"),
 ])
->>>>>>> upstream/main
 def test_is_arithmetic_progression_parametrized(lst, expected):
     if len(lst) > 500:
         random.shuffle(lst)
     assert is_arithmetic_progression(lst) == expected
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "intervals, expected",
     [
@@ -114,7 +107,6 @@ def test_find_single_number(nums, expected):
         pytest.param([42], [42], 1, id="single_nonzero"),
     ],
 )
-=======
 @pytest.mark.parametrize("intervals, expected", [
     pytest.param([], [], id="empty"),
     pytest.param([[1, 3]], [[1, 3]], id="single_interval"),
@@ -150,7 +142,6 @@ def test_find_single_number(nums, expected):
     pytest.param([0], [0], 0, id="single_zero"),
     pytest.param([42], [42], 1, id="single_nonzero"),
 ])
->>>>>>> upstream/main
 def test_move_zeros_to_end_parametrized(input_list, expected_list, expected_index):
     arr = input_list[:]
     result_index = move_zeros_to_end(arr)
@@ -158,7 +149,6 @@ def test_move_zeros_to_end_parametrized(input_list, expected_list, expected_inde
     assert result_index == expected_index
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "matrix, expected_row",
     [
@@ -174,7 +164,6 @@ def test_move_zeros_to_end_parametrized(input_list, expected_list, expected_inde
         pytest.param([[0, 0, 1], [0, 1, 1], [0, 1, 1]], 1, id="tie"),
     ],
 )
-=======
 @pytest.mark.parametrize("matrix, expected_row", [
     pytest.param(
         [[0, 0, 1, 1],
@@ -228,37 +217,29 @@ def test_move_zeros_to_end_parametrized(input_list, expected_list, expected_inde
         id="tie"
     ),
 ])
->>>>>>> upstream/main
 def test_find_row_with_most_ones(matrix, expected_row):
     assert find_row_with_most_ones(matrix) == expected_row
 
 
 def test_find_row_with_most_ones_big_data():
     size = 10000
-<<<<<<< HEAD
     matrix = [[0] * size for i in range(size)]
     matrix[size - 1][size - 1] = 1
-=======
     matrix = [[0]*size for i in range(size)]
     matrix[size-1][size-1] = 1
->>>>>>> upstream/main
 
     for i in range(50):
         assert find_row_with_most_ones(matrix) == 9999
 
     size = 10000
-<<<<<<< HEAD
     matrix = [[1] * size for i in range(size)]
-=======
     matrix = [[1]*size for i in range(size)]
->>>>>>> upstream/main
     matrix[0][0] = 0
 
     for i in range(50):
         assert find_row_with_most_ones(matrix) == 1
 
 
-<<<<<<< HEAD
 @pytest.mark.parametrize(
     "input_arr, expected",
     [
@@ -272,7 +253,6 @@ def test_find_row_with_most_ones_big_data():
         pytest.param([], 0, id="empty"),
     ],
 )
-=======
 @pytest.mark.parametrize("input_arr, expected", [
     pytest.param([0], 1, id="self_loop"),
     pytest.param([1, 0], 1, id="two_cycle"),
@@ -283,7 +263,6 @@ def test_find_row_with_most_ones_big_data():
     pytest.param([10, 6, 2, 9, 4, 0, 3, 8, 7, 1, 5], 5, id="mixed_cycles"),
     pytest.param([], 0, id="empty"),
 ])
->>>>>>> upstream/main
 def test_count_cycles(input_arr, expected):
     arr = input_arr[:]
     assert count_cycles(arr) == expected

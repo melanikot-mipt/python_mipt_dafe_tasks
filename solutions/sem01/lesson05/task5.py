@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def reg_validator(reg_expr: str, text: str) -> bool:
     for i in reg_expr:
         if text == "":
@@ -35,8 +34,6 @@ def reg_validator(reg_expr: str, text: str) -> bool:
         return False
 
     return True
-=======
 def reg_validator(reg_expr: str, text: str) -> bool:  
     # ваш код
     return False
->>>>>>> upstream/main

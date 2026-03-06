@@ -1,5 +1,4 @@
 def int_to_roman(num: int) -> str:
-<<<<<<< HEAD
     d = {
         1000: "M",
         900: "CM",
@@ -25,7 +24,5 @@ def int_to_roman(num: int) -> str:
                 break
 
     return s
-=======
     # ваш код
     return ""
->>>>>>> upstream/main

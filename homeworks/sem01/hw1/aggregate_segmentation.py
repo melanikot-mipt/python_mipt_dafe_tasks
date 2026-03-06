@@ -24,7 +24,6 @@ def aggregate_segmentation(
         Список `audio_id` (str), которые требуют переразметки.
     """
 
-<<<<<<< HEAD
     def validation():
         # один и тот же сегмент, но разные значения
         if (
@@ -309,7 +308,5 @@ def validation():
 
     return final_dict, list(audio_for_remarking)
 """
-=======
     # ваш код
     return {}, []
->>>>>>> upstream/main

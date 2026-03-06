@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 import time
 from functools import wraps
-=======
->>>>>>> upstream/main
 from typing import Callable, TypeVar
 
 T = TypeVar("T")
 
-<<<<<<< HEAD
 
 def collect_statistic(statistics: dict[str, list[float, int]]) -> Callable[[T], T]:
     def decorator(func: Callable[[T], T]):
@@ -32,11 +28,9 @@ def collect_statistic(statistics: dict[str, list[float, int]]) -> Callable[[T], 
         return wrapper
 
     return decorator
-=======
 def collect_statistic(
     statistics: dict[str, list[float, int]]
 ) -> Callable[[T], T]:
     
     # ваш код
     pass
->>>>>>> upstream/main
