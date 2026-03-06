@@ -9,7 +9,6 @@ def convert_from_sphere(
     distances: np.ndarray,
     azimuth: np.ndarray,
     inclination: np.ndarray,
-<<<<<<< HEAD
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     if distances.shape != azimuth.shape or azimuth.shape != inclination.shape:
         raise ShapeMismatchError
@@ -21,16 +20,12 @@ def convert_from_sphere(
     applicates = distances * np.cos(inclination)
 
     return abscissa, ordinates, applicates
-=======
-) -> tuple[np.ndarray, np.ndarray, np.ndarray]: ...
->>>>>>> upstream/main
 
 
 def convert_to_sphere(
     abscissa: np.ndarray,
     ordinates: np.ndarray,
     applicates: np.ndarray,
-<<<<<<< HEAD
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     if abscissa.shape != ordinates.shape or ordinates.shape != applicates.shape:
         raise ShapeMismatchError
@@ -40,6 +35,3 @@ def convert_to_sphere(
     azimuth = np.arctan2(ordinates, abscissa)
 
     return distances, azimuth, inclination
-=======
-) -> tuple[np.ndarray, np.ndarray, np.ndarray]: ...
->>>>>>> upstream/main
