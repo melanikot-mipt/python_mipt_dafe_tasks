@@ -18,5 +18,3 @@ def count_cycles(arr: list[int]) -> int:
         count += 1
 
     return count
-def count_cycles(arr: list[int]) -> int: 
-    return 0
