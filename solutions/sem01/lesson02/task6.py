@@ -1,5 +1,6 @@
 def get_sum_of_prime_divisors(num: int) -> int:
     sum_of_divisors = 0
+<<<<<<< HEAD
 
     i = 2
     temporary = num
@@ -16,4 +17,7 @@ def get_sum_of_prime_divisors(num: int) -> int:
     if temporary > 1:
         sum_of_divisors += temporary
 
+=======
+    # ваш код
+>>>>>>> upstream/main
     return sum_of_divisors

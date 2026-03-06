@@ -3,6 +3,7 @@ import numpy as np
 
 def get_extremum_indices(
     ordinates: np.ndarray,
+<<<<<<< HEAD
 ) -> tuple[np.ndarray, np.ndarray]:
     if ordinates.size < 3:
         raise ValueError
@@ -13,3 +14,6 @@ def get_extremum_indices(
     mask_maximums = (ordinates[1:-1] > ordinates[:-2]) & (ordinates[1:-1] > ordinates[2:])
 
     return arr[mask_minimums], arr[mask_maximums]
+=======
+) -> tuple[np.ndarray, np.ndarray]: ...
+>>>>>>> upstream/main

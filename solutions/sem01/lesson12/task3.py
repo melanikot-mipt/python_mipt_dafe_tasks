@@ -6,6 +6,7 @@ class FileOut:
         self,
         path_to_file: str,
     ) -> None:
+<<<<<<< HEAD
         self.path_to_file = path_to_file
 
     def __enter__(self):
@@ -18,3 +19,9 @@ class FileOut:
         sys.stdout = self._stdout
         self._file.close()
         return False
+=======
+        # ваш код
+        ...
+
+    # ваш код
+>>>>>>> upstream/main

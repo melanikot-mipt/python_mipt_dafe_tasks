@@ -1,4 +1,5 @@
 def get_nth_digit(num: int) -> int:
+<<<<<<< HEAD
     k = 5
     i = 0
     sum_i = 0
@@ -23,3 +24,7 @@ def get_nth_digit(num: int) -> int:
             digit = (N // (10 ** (n - position))) % 10
 
     return digit
+=======
+    # ваш код
+    return 0
+>>>>>>> upstream/main

@@ -2,6 +2,7 @@ def is_there_any_good_subarray(
     nums: list[int],
     k: int,
 ) -> bool:
+<<<<<<< HEAD
     d = {}
     sum = 0
 
@@ -18,4 +19,8 @@ def is_there_any_good_subarray(
         else:
             d[r] = i
 
+=======
+    
+    # ваш код
+>>>>>>> upstream/main
     return False

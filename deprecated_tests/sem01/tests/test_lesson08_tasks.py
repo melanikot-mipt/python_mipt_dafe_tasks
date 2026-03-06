@@ -4,7 +4,10 @@ import time
 
 from solutions.sem01.lesson08.task1 import make_averager
 from solutions.sem01.lesson08.task2 import collect_statistic
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 
 def test_make_averager():
     get_avg = make_averager(2)

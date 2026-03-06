@@ -1,4 +1,5 @@
 def merge_intervals(intervals: list[list[int, int]]) -> list[list[int, int]]:
+<<<<<<< HEAD
     if len(intervals) == 0:
         return intervals
 
@@ -25,3 +26,7 @@ def merge_intervals(intervals: list[list[int, int]]) -> list[list[int, int]]:
         i += 1
 
     return intervals
+=======
+    # ваш код
+    return [[0,0]]
+>>>>>>> upstream/main

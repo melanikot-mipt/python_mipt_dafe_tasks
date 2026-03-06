@@ -1,4 +1,5 @@
 def unzip(compress_text: str) -> str:
+<<<<<<< HEAD
     lst = compress_text.split(" ")
     unzip_lst = []
     for i in lst:
@@ -17,3 +18,7 @@ def unzip(compress_text: str) -> str:
 
 
 # print(unzip("AbcD*4 ef GhI*2"))
+=======
+    # ваш код
+    return compress_text
+>>>>>>> upstream/main

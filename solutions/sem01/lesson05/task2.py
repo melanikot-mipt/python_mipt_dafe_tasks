@@ -1,4 +1,5 @@
 def are_anagrams(word1: str, word2: str) -> bool:
+<<<<<<< HEAD
     t = True
     if len(word1) != len(word2):
         t = False
@@ -11,3 +12,7 @@ def are_anagrams(word1: str, word2: str) -> bool:
         if lst[ord(i)] < 0:
             t = False
     return t
+=======
+    # ваш код
+    return False
+>>>>>>> upstream/main

@@ -1,4 +1,5 @@
 def find_row_with_most_ones(matrix: list[list[int]]) -> int:
+<<<<<<< HEAD
     if len(matrix) == 0:
         return 0
 
@@ -7,3 +8,7 @@ def find_row_with_most_ones(matrix: list[list[int]]) -> int:
     for i in range(len(matrix)):
         if matrix[i] == new[len(new) - 1]:
             return i
+=======
+    # ваш код
+    return 0
+>>>>>>> upstream/main

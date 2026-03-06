@@ -1,4 +1,5 @@
 def is_arithmetic_progression(lst: list[list[int]]) -> bool:
+<<<<<<< HEAD
     lst = sorted(lst)
 
     progression = True
@@ -10,3 +11,7 @@ def is_arithmetic_progression(lst: list[list[int]]) -> bool:
                 break
 
     return progression
+=======
+    # ваш код
+    return False
+>>>>>>> upstream/main

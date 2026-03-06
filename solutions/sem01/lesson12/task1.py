@@ -2,6 +2,7 @@ from typing import Any, Generator, Iterable
 
 
 def chunked(iterable: Iterable, size: int) -> Generator[tuple[Any], None, None]:
+<<<<<<< HEAD
     iterator = iter(iterable)
 
     while True:
@@ -14,3 +15,7 @@ def chunked(iterable: Iterable, size: int) -> Generator[tuple[Any], None, None]:
                     yield tuple(current_chunk)
                 return
         yield tuple(current_chunk)
+=======
+    # ваш код
+    ...
+>>>>>>> upstream/main

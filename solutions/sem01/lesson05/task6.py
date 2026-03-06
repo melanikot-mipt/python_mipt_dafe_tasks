@@ -1,4 +1,5 @@
 def simplify_path(path: str) -> str:
+<<<<<<< HEAD
     lst = path.split("/")
     lst = [x for x in lst if x != "" and x != "."]
 
@@ -18,3 +19,7 @@ def simplify_path(path: str) -> str:
         i += 1
     path = "/" + "/".join(lst)
     return path
+=======
+    # ваш код
+    return path
+>>>>>>> upstream/main
