@@ -28,7 +28,3 @@ def collect_statistic(statistics: dict[str, list[float, int]]) -> Callable[[T], 
         return wrapper
 
     return decorator
-def collect_statistic(
-    statistics: dict[str, list[float, int]]
-) -> Callable[[T], T]:
-    
