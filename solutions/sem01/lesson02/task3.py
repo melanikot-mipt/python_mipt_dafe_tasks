@@ -11,5 +11,4 @@ def get_amount_of_ways_to_climb(stair_amount: int) -> int:
             step_prev = temporary_val
 
         return step_curr
-    # ваш код
     return step_curr

@@ -14,5 +14,4 @@ def move_zeros_to_end(nums: list[int]) -> list[int]:
 
     index = len(nums) - n_zero
     return index
-    # ваш код
     return 0

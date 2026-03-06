@@ -18,5 +18,3 @@ def make_averager(accumulation_period: int) -> Callable[[float], float]:
 
     return get_avg
 def make_averager(accumulation_period: int) -> Callable[[float], float]:
-    # ваш код
-    pass

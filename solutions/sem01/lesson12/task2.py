@@ -17,5 +17,4 @@ def circle(iterable: Iterable) -> Generator[Any, None, None]:
     while True:
         call_number += 1
         yield list_of_elements_already_returned[(call_number - 1) % iterable_length]
-    # ваш код
     ...

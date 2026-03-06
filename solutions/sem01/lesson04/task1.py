@@ -10,5 +10,4 @@ def is_arithmetic_progression(lst: list[list[int]]) -> bool:
                 break
 
     return progression
-    # ваш код
     return False

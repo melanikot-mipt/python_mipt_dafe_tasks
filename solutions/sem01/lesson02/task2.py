@@ -14,5 +14,4 @@ def get_doubled_factorial(num: int) -> int:
                 factorial *= i
 
         return factorial
-    # ваш код
     return factorial

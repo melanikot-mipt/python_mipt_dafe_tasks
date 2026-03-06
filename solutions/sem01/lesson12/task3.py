@@ -18,7 +18,5 @@ class FileOut:
         sys.stdout = self._stdout
         self._file.close()
         return False
-        # ваш код
         ...
 
-    # ваш код

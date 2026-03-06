@@ -94,7 +94,6 @@ def test_convert_matching_exception() -> None:
     """Тест: исключение заменяется на API-совместимое."""
 
     class ApiValueError(Exception):
-        pass
 
     @convert_exceptions_to_api_compitable_ones({ValueError: ApiValueError})
     def func():

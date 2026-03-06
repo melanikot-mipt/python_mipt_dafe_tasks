@@ -19,5 +19,4 @@ def is_there_any_good_subarray(
             d[r] = i
 
     
-    # ваш код
     return False

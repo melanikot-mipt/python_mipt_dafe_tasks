@@ -20,5 +20,4 @@ def get_cube_root(n: float, eps: float) -> float:
         mid = (m + M) / 2
 
     return mid
-    # ваш код
     return n

@@ -11,5 +11,4 @@ def are_anagrams(word1: str, word2: str) -> bool:
         if lst[ord(i)] < 0:
             t = False
     return t
-    # ваш код
     return False

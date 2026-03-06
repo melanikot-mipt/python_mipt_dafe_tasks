@@ -10,5 +10,4 @@ def get_multiplications_amount(num: int) -> int:
             num = (num - 1) / 2
             multiplications_amount += 2
 
-    # ваш код
     return multiplications_amount

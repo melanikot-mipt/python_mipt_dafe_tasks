@@ -14,5 +14,4 @@ def chunked(iterable: Iterable, size: int) -> Generator[tuple[Any], None, None]:
                     yield tuple(current_chunk)
                 return
         yield tuple(current_chunk)
-    # ваш код
     ...

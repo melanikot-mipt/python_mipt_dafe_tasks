@@ -23,5 +23,4 @@ def get_nth_digit(num: int) -> int:
             digit = (N // (10 ** (n - position))) % 10
 
     return digit
-    # ваш код
     return 0

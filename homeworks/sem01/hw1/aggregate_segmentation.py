@@ -308,5 +308,3 @@ def validation():
 
     return final_dict, list(audio_for_remarking)
 """
-    # ваш код
-    return {}, []

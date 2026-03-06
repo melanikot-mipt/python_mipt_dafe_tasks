@@ -8,5 +8,4 @@ def get_gcd(num1: int, num2: int) -> int:
 
     gcd = min(x, y)
     return gcd
-    # ваш код
     return num1

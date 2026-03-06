@@ -142,5 +142,3 @@ try:
         return wrapper
     return decorator
 """
-    # ваш код
-    pass

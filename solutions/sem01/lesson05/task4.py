@@ -17,5 +17,4 @@ def unzip(compress_text: str) -> str:
 
 
 # print(unzip("AbcD*4 ef GhI*2"))
-    # ваш код
     return compress_text

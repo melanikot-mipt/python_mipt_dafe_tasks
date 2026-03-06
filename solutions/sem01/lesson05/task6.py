@@ -18,5 +18,4 @@ def simplify_path(path: str) -> str:
         i += 1
     path = "/" + "/".join(lst)
     return path
-    # ваш код
     return path

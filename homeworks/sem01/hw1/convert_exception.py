@@ -82,5 +82,3 @@ except tuple(exception_to_api_exception.keys()) as exc:
                     raise exception_to_api_exception[type(exc)] from None
                 raise
 """
-    # ваш код
-    pass

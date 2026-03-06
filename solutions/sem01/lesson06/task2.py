@@ -17,5 +17,4 @@ def get_len_of_longest_substring(text: str) -> int:
                 break
 
     return max
-    # ваш код
     return 0

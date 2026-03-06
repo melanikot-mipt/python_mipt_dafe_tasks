@@ -19,5 +19,4 @@ def is_palindrome(num: int) -> bool:
                 num_reversed += (num % (10**i)) // (10 ** (i - 1)) * 10 ** (len - i)
 
     return num_reversed == num_origin
-    # ваш код
     return num_origin == num_reversed

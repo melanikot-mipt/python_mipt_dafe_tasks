@@ -24,5 +24,4 @@ def int_to_roman(num: int) -> str:
                 break
 
     return s
-    # ваш код
     return ""

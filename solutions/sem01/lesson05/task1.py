@@ -3,5 +3,4 @@ def is_palindrome(text: str) -> bool:
         if text[i].lower() != text[len(text) - 1 - i].lower():
             return False
     return True
-    # ваш код
     return False
