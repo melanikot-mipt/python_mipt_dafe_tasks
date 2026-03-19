@@ -18,5 +18,5 @@ def adaptive_filter(
     if Vj.shape[1] != A.shape[0] or Vj.shape[0] != Vs.shape[0]:
         raise ShapeMismatchError
 
-    Vj_H = np.conj(Vj).T
+    Vj_H = (Vj.real - 1j * Vj.imag).T
     return Vs - Vj @ np.linalg.inv(np.eye(A.shape[0]) + Vj_H @ Vj @ A) @ (Vj_H @ Vs)
