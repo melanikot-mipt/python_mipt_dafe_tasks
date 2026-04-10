@@ -3,6 +3,7 @@ from typing import Any
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 class ShapeMismatchError(Exception):
     pass
 
