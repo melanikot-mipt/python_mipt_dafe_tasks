@@ -12,8 +12,8 @@ class ShapeMismatchError(Exception):
 
 def set_style_for_violin(violin_parts_hor, violin_parts_vert):
     for body in violin_parts_hor["bodies"]:
-            body.set_facecolor("lightpink")
-            body.set_edgecolor("hotpink")
+        body.set_facecolor("lightpink")
+        body.set_edgecolor("hotpink")
 
     for body in violin_parts_vert["bodies"]:
         body.set_facecolor("lightpink")
@@ -32,7 +32,6 @@ def set_style_for_violin(violin_parts_hor, violin_parts_vert):
         violin_parts_vert[part].set_edgecolor("hotpink")
 
 
-
 def visualize_diagrams(
     abscissa: np.ndarray,
     ordinates: np.ndarray,
@@ -42,7 +41,7 @@ def visualize_diagrams(
         raise ShapeMismatchError
     if diagram_type != "hist" and diagram_type != "violin" and diagram_type != "box":
         raise ValueError
-    
+
     figure = plt.figure(figsize=(8, 8))
     grid = plt.GridSpec(4, 4, wspace=space, hspace=space)
 
@@ -97,9 +96,6 @@ def visualize_diagrams(
         )
 
     axis_diagram_hor.invert_yaxis()
-
-    
-
 
 
 if __name__ == "__main__":

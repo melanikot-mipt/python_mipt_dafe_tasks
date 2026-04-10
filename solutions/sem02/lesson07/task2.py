@@ -1,14 +1,15 @@
+import json
+
 import matplotlib.pyplot as plt
 import numpy as np
-import json
 
 plt.style.use("ggplot")
 
-with open('solutions\sem02\lesson07\data\medic_data.json', 'r', encoding='utf-8') as file:
+with open("solutions\sem02\lesson07\data\medic_data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
-def medic_diagram(data):
 
+def medic_diagram(data):
     labels, counts_before = np.unique(np.array(data["before"]), return_counts=True)
     labels, counts_after = np.unique(np.array(data["after"]), return_counts=True)
 
@@ -16,21 +17,21 @@ def medic_diagram(data):
     width = 0.3
 
     axis.bar(
-        np.arange(labels.size) - width/2,
+        np.arange(labels.size) - width / 2,
         counts_before,
         width=width,
         color="lightpink",
         edgecolor="palevioletred",
-        label="before"
+        label="before",
     )
 
     axis.bar(
-        np.arange(labels.size) + width/2,
+        np.arange(labels.size) + width / 2,
         counts_after,
         width=width,
         color="hotpink",
         edgecolor="palevioletred",
-        label="after"
+        label="after",
     )
 
     axis.set_title("Mitral disease stages", fontsize=17, fontweight="bold", c="orchid")
@@ -39,5 +40,6 @@ def medic_diagram(data):
     axis.legend(fontsize=15)
 
     figure.savefig("solutions/sem02/lesson07/medic_diagram.png", bbox_inches="tight")
+
 
 medic_diagram(data)
