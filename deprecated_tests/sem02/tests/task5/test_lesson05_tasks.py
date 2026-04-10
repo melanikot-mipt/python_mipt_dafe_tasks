@@ -89,7 +89,10 @@ class TestTask1:
             ),
         ],
     )
-    def test_can_satisfy_demand(self, costs, resource_amounts, demand_expected, expected):
+    
+    def test_can_satisfy_demand(
+        self, costs, resource_amounts, demand_expected, expected
+    ):
         assert can_satisfy_demand(costs, resource_amounts, demand_expected) == expected
 
     def test_can_satisfy_demand_validate(self):
@@ -170,7 +173,10 @@ class TestTask2:
             ),
         ],
     )
-    def test_get_projections_components(self, matrix, vector, proj_expected, orth_expected):
+    
+    def test_get_projections_components(
+        self, matrix, vector, proj_expected, orth_expected
+    ):
         projections, orthogonals = get_projections_components(matrix, vector)
 
         if proj_expected is None:

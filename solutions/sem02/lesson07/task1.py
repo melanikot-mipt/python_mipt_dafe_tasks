@@ -3,9 +3,6 @@ from typing import Any
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.style.use("ggplot")
-
-
 class ShapeMismatchError(Exception):
     pass
 
@@ -105,5 +102,6 @@ if __name__ == "__main__":
 
     abscissa, ordinates = np.random.multivariate_normal(mean, cov, size=1000).T
 
-    visualize_diagrams(abscissa, ordinates, "violin")
+    visualize_diagrams(abscissa, ordinates, "hist")
+
     plt.show()
